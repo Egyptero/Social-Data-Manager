@@ -1,0 +1,150 @@
+package cxengage.facebook.engine;
+
+import org.junit.Test;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import cxengage.facebook.conf.pojos.Tenant;
+import cxengage.facebook.logger.RouterLog;
+import cxengage.instagram.services.InstagramFetcher;
+
+public class TwitterEngineTest {
+
+	@Test
+	public void test() {
+		try {
+			//TODO request.getSession().getServletContext().getRealPath("WEB-INF/classes/data.json");
+			ObjectMapper mapper = new ObjectMapper();
+
+			String src = "{\r\n" + 
+					"        \"id\": \"10159831212825333\",\r\n" + 
+					"        \"page\": null,\r\n" + 
+					"        \"accesstoken\": \"EAACjfdf1m7cBANwWu2FNdANmVBGhEqII5WsIrMo2A4SEZCXBZBuQBtryCQ2NIEnOFJotMLxP8zGSDzaHZAaFoLJ8UUZB6kZAAJmYEI162NdaZBIVcguapJ5F2ZAvIp5S7SeeaZBSK7BsOV9gAXVcBA2QRkSRGtAH2z0ZD\",\r\n" + 
+					"        \"user\": \"Mamdouh Aref Mohamed\",\r\n" + 
+					"        \"startTime\": \"00:00\",\r\n" + 
+					"        \"endTime\": \"23:53\",\r\n" + 
+					"        \"queueName\": null,\r\n" + 
+					"        \"endPoint\": null,\r\n" + 
+					"        \"rate\": \"10\",\r\n" + 
+					"        \"tenantId\": null,\r\n" + 
+					"        \"mediaType\": null,\r\n" + 
+					"        \"startDate\": \"2017-01-01\",\r\n" + 
+					"        \"facebookData\": {\r\n" + 
+					"            \"posts\": false,\r\n" + 
+					"            \"comments\": false,\r\n" + 
+					"            \"replies\": false,\r\n" + 
+					"            \"console\": true,\r\n" + 
+					"            \"restAPI\": true,\r\n" + 
+					"            \"contactCenter\": false,\r\n" + 
+					"            \"pages\": [\r\n" + 
+					"                \"120184378052351\",\r\n" + 
+					"                \"206019422765666\",\r\n" + 
+					"                \"537332926281769\",\r\n" + 
+					"                \"308991485805211\"\r\n" + 
+					"            ],\r\n" + 
+					"            \"contactCenterData\": {\r\n" + 
+					"                \"genesysCPData\": {\r\n" + 
+					"                    \"queueName\": \"\",\r\n" + 
+					"                    \"endPoint\": \"\",\r\n" + 
+					"                    \"tenantId\": \"\",\r\n" + 
+					"                    \"mediaType\": \"\"\r\n" + 
+					"                },\r\n" + 
+					"                \"ciscoSMData\": {\r\n" + 
+					"                    \"host\": \"\",\r\n" + 
+					"                    \"port\": \"\"\r\n" + 
+					"                }\r\n" + 
+					"            },\r\n" + 
+					"            \"restAPIData\": {\r\n" + 
+					"                \"uri\": \"http://18.208.70.80:5044\",\r\n" + 
+					"                \"methodGet\": false,\r\n" + 
+					"                \"methodPost\": false,\r\n" + 
+					"                \"inBodyData\": true,\r\n" + 
+					"                \"inParameterData\": false,\r\n" + 
+					"                \"parameterName\": \"\"\r\n" + 
+					"            }\r\n" + 
+					"        },\r\n" + 
+					"        \"instagramData\": {\r\n" + 
+					"            \"posts\": true,\r\n" + 
+					"            \"comments\": true,\r\n" + 
+					"            \"replies\": true,\r\n" + 
+					"            \"console\": true,\r\n" + 
+					"            \"restAPI\": false,\r\n" + 
+					"            \"contactCenter\": false,\r\n" + 
+					"            \"pages\": [\r\n" + 
+					"                \"246199665795861\"\r\n" + 
+					"            ],\r\n" + 
+					"            \"contactCenterData\": {\r\n" + 
+					"                \"genesysCPData\": {\r\n" + 
+					"                    \"queueName\": \"\",\r\n" + 
+					"                    \"endPoint\": \"\",\r\n" + 
+					"                    \"tenantId\": \"\",\r\n" + 
+					"                    \"mediaType\": \"\"\r\n" + 
+					"                },\r\n" + 
+					"                \"ciscoSMData\": {\r\n" + 
+					"                    \"host\": \"\",\r\n" + 
+					"                    \"port\": \"\"\r\n" + 
+					"                }\r\n" + 
+					"            },\r\n" + 
+					"            \"restAPIData\": {\r\n" + 
+					"                \"uri\": \"\",\r\n" + 
+					"                \"methodGet\": false,\r\n" + 
+					"                \"methodPost\": false,\r\n" + 
+					"                \"inBodyData\": false,\r\n" + 
+					"                \"inParameterData\": false,\r\n" + 
+					"                \"parameterName\": \"\"\r\n" + 
+					"            }\r\n" + 
+					"        },\r\n" + 
+					"        \"twitterData\": {\r\n" + 
+					"            \"tweets\": false,\r\n" + 
+					"            \"console\": false,\r\n" + 
+					"            \"restAPI\": false,\r\n" + 
+					"            \"contactCenter\": false,\r\n" + 
+					"            \"token\": \"204352949-GTqYUw2UrNvH98w1PbSFyXGKRt9M7GzOyGwY0ywx\",\r\n" + 
+					"            \"tokenSecret\": \"KE5OrzKL1IJaj3xWht40MgYFDo9S8nDysfB0t9fnLLBCb\",\r\n" + 
+					"            \"id\": \"204352949\",\r\n" + 
+					"            \"userName\": \"Mamdouh Aref Mohamed\",\r\n" + 
+					"            \"profilePicUrl\": \"http://pbs.twimg.com/profile_images/989501893876572160/B3MFezHF_normal.jpg\",\r\n" + 
+					"            \"keys\": [\"alrajhibank\"],\r\n" + 
+					"            \"contactCenterData\": {\r\n" + 
+					"                \"genesysCPData\": {\r\n" + 
+					"                    \"queueName\": \"\",\r\n" + 
+					"                    \"endPoint\": \"\",\r\n" + 
+					"                    \"tenantId\": \"\",\r\n" + 
+					"                    \"mediaType\": \"\"\r\n" + 
+					"                },\r\n" + 
+					"                \"ciscoSMData\": {\r\n" + 
+					"                    \"host\": \"\",\r\n" + 
+					"                    \"port\": \"\"\r\n" + 
+					"                }\r\n" + 
+					"            },\r\n" + 
+					"            \"restAPIData\": {\r\n" + 
+					"                \"uri\": \"\",\r\n" + 
+					"                \"methodGet\": false,\r\n" + 
+					"                \"methodPost\": false,\r\n" + 
+					"                \"inBodyData\": false,\r\n" + 
+					"                \"inParameterData\": false,\r\n" + 
+					"                \"parameterName\": \"\"\r\n" + 
+					"            }\r\n" + 
+					"        }\r\n" + 
+					"    }";
+			Tenant tenant = mapper.readValue(src, Tenant.class);
+			
+			RouterLog routerLog = new RouterLog("C:\\Users\\Mamdouh\\eclipse-workspace\\Inst-Genesys\\src\\main\\webapp\\WEB-INF\\ids.json");
+			TwitterEngine twitterEngine = new TwitterEngine(routerLog, tenant, false,TwitterEngine.SearchType.Standard);
+//			twitterEngine.start();
+//			synchronized(this) {
+//				wait(1*60*1000);
+//				twitterEngine.setActive(false);
+//				if(!twitterEngine.isAlive())
+//					twitterEngine.notify();
+////				wait(6*60*1000);
+//				routerLog.save();
+//			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+
+}

@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        
+<script src="js/chart.js"></script>
+  </head>
+<div id="google_chart_div" width="750" height="400"></div>
+<input id="next" type="button" value="Next reading">
+
+

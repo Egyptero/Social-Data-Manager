@@ -1,0 +1,60 @@
+.container {
+    border-radius: 10px;
+    border: 2px solid lightgray ;
+    
+}
+
+hr{
+    border-width: 2px;
+    border-color: lightgray;
+    margin-bottom: 10px
+}
+.commentUsername{
+    font-weight: bold;
+    padding-right: 0;
+    margin-right: 0px;
+}
+.rightImgDiv{
+    width: 90px;
+}
+.glyphicon {
+    font-size: 25px;
+}
+.no-border {
+    border: 0;
+    box-shadow: none; /* You may want to include this as bootstrap applies these styles too */
+}
+.scrollDiv{
+    overflow-y: scroll ; 
+    overflow-x:hidden;
+    height: 250px;
+    padding-right: 6px
+}
+.leftArea img{
+    height: 100%; 
+    width: 100%; 
+    padding: 5px ;
+    border-radius: 24px;
+}
+.leftArea{
+    padding-left: 0;
+    margin: 0 ;
+/*    height: 600px;
+    width: 600px;*/
+}
+.commentText{
+    word-wrap: break-word;
+    padding: 0;
+}
+.righArea{
+    padding: 0;
+}
+.usernameDiv{
+	margin-top: 2vh;font-weight: bold;padding: 0
+}
+.glyphicon-heart{
+	color:red;
+}
+#commentText{
+    height: 120px
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InstGenesys Account</title>
+<link rel="icon" href="img/icon.png">
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/scriptsTest.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">InstGenesys</a>
+			</div>
+
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<h1 class="text-center">Instagram Genesys Connector Administrator</h1>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<div class="container">
+      <div class="row">
+  		<div id="error" class="alert-warning text-center"></div>
+  	  </div>
+		<br>
+		<div class="row">
+            <div class="col-sm-4">
+            	<div class="row">
+                    <div class="col-xs-6">
+                        <label><strong>Start Time</strong></label>
+                        <input id="starttime" type="time" class="form-control" title="The start time of day to fetch interactions" disabled>
+                    </div>
+                    <div class="col-xs-6">
+                        <label><strong>End Time</strong></label>
+                        <input id="endtime" type="time" class="form-control" title="The end time of day to fetch interactions" disabled>
+                    </div>
+				</div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label><strong>Page ID</strong></label>
+                        <input id="pageid" type="text" class="form-control"
+                            placeholder="Page ID" title="Facebook page id. You can check your page for the word after @." disabled>
+                    </div>
+                    
+                    <div class="col-xs-6">
+                        <label><strong>Start Date</strong></label>
+                        <input id="startdate" type="date" class="form-control" title="The start date of reading from instagram account" disabled>
+                    </div>
+                
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label><strong>Fetch Rate (mins)</strong></label>
+                        <input id="enginerate" type="text" class="form-control"
+                            placeholder="Fetch rate" title="Rate of reading Instagram comments / replies in minutes" disabled>
+                    </div>
+                </div>
+			</div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label><strong>Queue Name</strong></label>
+                        <input id="queuename" type="text" class="form-control"
+                            placeholder="Queue Name" title="The queue name configured on Genesys capture point. Sample 'Instagram Inbound Queue'" disabled>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label><strong>End Point</strong></label>
+                        <input id="endpoint" type="text" class="form-control"
+                            placeholder="End Point" title="Capture point full URL. Sample 'http://ec2-34-205-57-32.compute-1.amazonaws.com:7008/Genesys/Interaction/INS_CP/WebServiceCapturePoint?wsdl'" disabled>
+                    </div>
+				</div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <label><strong>Media Type</strong></label>
+                        <input id="mediatype" type="text" class="form-control"
+                            placeholder="Media Type" title="The Media Type defined in the Genesys Capture Point. Sample 'instagram'" disabled>
+                    </div>
+                    <div class="col-xs-6">
+                        <label><strong>Tenant ID</strong></label>
+                        <input id="tenantid" type="text" class="form-control"
+                            placeholder="Tenant ID" title="The tenant id configured on Genesys capture point. Sample '101'" disabled>
+                    </div>
+				</div>
+            </div>
+			<div class="col-sm-4">
+            	<div class="row">
+                    <div class="col-xs-12">
+                        <label><strong> Status </strong></label>
+                        <input id="enginestatus" type="text" class="form-control"
+                            placeholder="Unkown" title="InstGenesys Engine Status. Unknown means it never run before." disabled>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <label><strong> Total comments </strong></label>
+                        <input id="routedcount" type="text" class="form-control"
+                            placeholder="-" title="The total number of interactions sent to Genesys platform" disabled>
+                    </div>
+				</div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-4 col-xs-offset-4">
+                    	<img id="engineicon" class="img-thumbnail img-responsive img-circle" src="img/stop.png" alt="Start" onmouseover="this.style.cursor='pointer'"/>
+                    </div>
+				</div>
+			</div>            
+        </div>
+        <br>
+<!--         <div class="row"> -->
+<!--             <div class="col-xs-8 text-center"> -->
+<!--                 <input id="updateinfo" type="button" class="btn" value="Update" -->
+<!--                     disabled> -->
+<!--             </div> -->
+<!--             <div class="col-xs-4 text-center"> -->
+<!--                 <input id="enginecontrol" type="button" class="btn" value="Start" disabled> -->
+<!--             </div> -->
+<!--         </div> -->
+        <br>
+		<div class="row">
+			<div class="text-center col-md-12">
+				<div id="status" class="well">
+					You must login to facebook or Instagram in order to <strong>grant
+						access</strong>.
+                        <br>
+					<fb:login-button
+						scope="public_profile,email,instagram_basic,instagram_manage_comments,instagram_manage_insights,manage_pages"
+						onlogin="checkLoginState();" id="FacebookLogin"></fb:login-button>
+                        
+<!--                         <a href="https://api.instagram.com/oauth/authorize/?client_id=3cdfe5373859442db19a1d86ae41a75f&redirect_uri=http://emp.istnetworks.com:8080/InstGenesys&response_type=code&scope=basic+public_content+comments+relationships+likes+follower_list">Instagram Login</a> -->
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-6">
+				<div class="text-center col-md-12">
+					<h4>Manage Instagram account</h4>
+					<p>
+						Please link your instagram account to your organization facebook
+						page. <br>For more details click <strong><a
+							href="https://help.instagram.com/356902681064399">here</a></strong>
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="text-center col-md-12">
+					<h4>Engage with InstGenesys</h4>
+					<p>InstGenesys is social platform to inetgrate instagram to
+						Genesys contact center</p>
+					<div class="text-center col-md-12 fb-like" data-share="true"
+						data-width="450" data-show-faces="true"></div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="text-center col-md-6 col-md-offset-3">
+				<p>
+					Copyright &copy; 2018 &middot; All Rights Reserved &middot; InstGenesys
+				</p>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="js/jquery-1.11.2.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

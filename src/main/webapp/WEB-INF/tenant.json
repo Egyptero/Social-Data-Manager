@@ -1,0 +1,146 @@
+{
+	"error": false,
+	"errorMessage": null,
+	"tenant": {
+		"id": "10160629034030333",
+		"page": null,
+		"accesstoken": "EAAaDJIYtDN8BADIdZBVHcVLQOuDnBZChDypWE9wudMA7WWkvWZCP3j26tZA1ebsZA9HYEYbOv7B2b6ep17zUEJJGSUGmDZCouZAcBNiwPIHdmZBQ2pwuBZBRMFhVbWTc7c0hGW0XmilWsZCj3m8PTl7BotxEGSSIBZCEZC8ZD",
+		"user": "Mamdouh Aref Mohamed",
+		"startTime": "",
+		"endTime": "",
+		"queueName": null,
+		"endPoint": null,
+		"rate": "1",
+		"tenantId": null,
+		"mediaType": null,
+		"startDate": "",
+		"facebookData": {
+			"posts": false,
+			"comments": false,
+			"replies": false,
+			"console": false,
+			"restAPI": false,
+			"contactCenter": false,
+			"pages": [],
+			"contactCenterData": {
+				"genesysCPData": {
+					"queueName": "",
+					"endPoint": "",
+					"tenantId": "",
+					"mediaType": ""
+				},
+				"ciscoSMData": {
+					"host": "",
+					"port": ""
+				}
+			},
+			"restAPIData": {
+				"uri": "",
+				"methodGet": false,
+				"methodPost": false,
+				"inBodyData": false,
+				"inParameterData": false,
+				"parameterName": ""
+			}
+		},
+		"instagramData": {
+			"posts": false,
+			"comments": false,
+			"replies": false,
+			"console": false,
+			"restAPI": false,
+			"contactCenter": false,
+			"pages": [],
+			"contactCenterData": {
+				"genesysCPData": {
+					"queueName": "",
+					"endPoint": "",
+					"tenantId": "",
+					"mediaType": ""
+				},
+				"ciscoSMData": {
+					"host": "",
+					"port": ""
+				}
+			},
+			"restAPIData": {
+				"uri": "",
+				"methodGet": false,
+				"methodPost": false,
+				"inBodyData": false,
+				"inParameterData": false,
+				"parameterName": ""
+			}
+		},
+		"twitterData": {
+			"tweets": true,
+			"console": true,
+			"restAPI": false,
+			"contactCenter": false,
+			"token": "230218074-ly1sm8FRplb2vEO0nmSgRPh2EZxL7NVAJtEuwKGI",
+			"tokenSecret": "AV242MXEwaSJyDIrdIEmJsBkEPucCGgngcOwVd5oI3CVa",
+			"id": "230218074",
+			"userName": "IST Networks",
+			"profilePicUrl": "http://pbs.twimg.com/profile_images/829730461849157633/nQzcbn91_normal.jpg",
+			"keys": [
+				"Samba"
+			],
+			"contactCenterData": {
+				"genesysCPData": {
+					"queueName": "",
+					"endPoint": "",
+					"tenantId": "",
+					"mediaType": ""
+				},
+				"ciscoSMData": {
+					"host": "",
+					"port": ""
+				}
+			},
+			"restAPIData": {
+				"uri": "",
+				"methodGet": false,
+				"methodPost": false,
+				"inBodyData": true,
+				"inParameterData": false,
+				"parameterName": ""
+			}
+		},
+		"engineStatus": null,
+		"notificationList": null,
+		"removeTenant": false
+	},
+	"tenants": null,
+	"facebookStatus": "Unknown",
+	"facebookHistoryStatus": "Unknown",
+	"facebookErrorMessage": null,
+	"instagramStatus": "Unknown",
+	"instagramHistoryStatus": "Unknown",
+	"instagramErrorMessage": null,
+	"twitterStatus": "Sleep",
+	"twitterWeekHistoryStatus": "Unknown",
+	"twitterMonthHistoryStatus": "Unknown",
+	"twitterFullHistoryStatus": "Unknown",
+	"twitterErrorMessage": null,
+	"id": null,
+	"page": null,
+	"token": null,
+	"status": "Unknown",
+	"starttime": null,
+	"endtime": null,
+	"queuename": null,
+	"tenantid": null,
+	"mediatype": null,
+	"routedcount": 0,
+	"rate": 1,
+	"instMedia": null,
+	"instComment": null,
+	"instReply": null,
+	"commentId": null,
+	"instUser": null,
+	"commentText": null,
+	"businessAccountID": null,
+	"endpoint": null,
+	"startdate": null,
+	"generatedid": null
+}

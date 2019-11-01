@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InstGenesys Agent</title>
+<link rel="icon" href="img/icon.png">
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/InstGenesysClient.js"></script>
+<script src="js/wwe-service-client-api.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">InstGenesys</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+<div class="container">
+  <div class="row">
+  	<div id="error" class="alert-warning text-center"></div>
+  </div>
+  <br>
+  <div class="row">
+    <div id="likeArea" class="well text-center"></div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-6 text-center">
+	  <center>
+        <img id="media" src="img/empty.png" class="img-rounded" style="width:80%;"> 
+      </center>
+    </div>
+    <div class="col-xs-6">
+    	<br>
+        <div class="row">
+            <div class="col-xs-2">
+	            <img id="userpic" src="img/empty.png" class="img-thumbnail img-circle">
+            </div>
+            <div class="col-xs-10"><h4 id="username"></h4></div>
+        </div>
+        <hr>
+        <div class="row">
+		  <div class="col-lg-12" id="history" style="height:180px; overflow-y:scroll;">
+<!--           	<div class="row"> -->
+<!--                 <div class="col-md-4"><strong>Mamdouh Aref Mohamed El sayed Osman</strong></div> -->
+<!--                 <div class="col-md-8">Some Commect Text</div> -->
+<!--             </div> -->
+<!--           	<div class="row" style="margin-left:5px;"> -->
+<!--                 <div class="col-md-4"><strong>Mamdouh Aref</strong></div> -->
+<!--                 <div class="col-md-8">Some Commect Text aaaaa   lk</div> -->
+<!--             </div> -->
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <textarea id="agentres" class="form-control" placeholder="Add a Comment..." style="resize:none; border:hidden;"></textarea>
+            <br>
+            <button id="sendres" class="btn" disabled>Send</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="text-center col-md-6 col-md-offset-3">
+      <p>Copyright &copy; 2018 &middot; All Rights Reserved &middot; InstGenesys</p>
+    </div>
+  </div>
+  <hr>
+</div>
+</body>
+</html>

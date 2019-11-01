@@ -1,0 +1,305 @@
+{
+	"tenants": [
+		{
+			"id": "2086659768260853",
+			"page": null,
+			"accesstoken": "EAACjfdf1m7cBALQmZBaQMIZACiMjjgBZBOHfRrpZAiZBpdlXSr2w1ma0udoAKoB8JjiZBjTKWxDmn4l8dwxMwDuPYJqhLT503QPzDhMHhFjrAgeJCVj6MXXF6jmqkQPKTmGgYVpX5EblGoFRJh1yMX5gnIcUmFoPFKgIoGSsoGZAgZDZD",
+			"user": "Naela Sakr",
+			"startTime": "00:00",
+			"endTime": "23:59",
+			"queueName": null,
+			"endPoint": null,
+			"rate": "10",
+			"tenantId": null,
+			"mediaType": null,
+			"startDate": "2015-01-01",
+			"facebookData": {
+				"posts": false,
+				"comments": false,
+				"replies": false,
+				"console": false,
+				"restAPI": false,
+				"contactCenter": false,
+				"pages": [
+					"383623205009209"
+				],
+				"contactCenterData": {
+					"genesysCPData": {
+						"queueName": "",
+						"endPoint": "",
+						"tenantId": "",
+						"mediaType": ""
+					},
+					"ciscoSMData": {
+						"host": "",
+						"port": ""
+					}
+				},
+				"restAPIData": {
+					"uri": "",
+					"methodGet": false,
+					"methodPost": false,
+					"inBodyData": false,
+					"inParameterData": false,
+					"parameterName": ""
+				}
+			},
+			"instagramData": {
+				"posts": false,
+				"comments": false,
+				"replies": false,
+				"console": false,
+				"restAPI": false,
+				"contactCenter": false,
+				"pages": [],
+				"contactCenterData": {
+					"genesysCPData": {
+						"queueName": "",
+						"endPoint": "",
+						"tenantId": "",
+						"mediaType": ""
+					},
+					"ciscoSMData": {
+						"host": "",
+						"port": ""
+					}
+				},
+				"restAPIData": {
+					"uri": "",
+					"methodGet": false,
+					"methodPost": false,
+					"inBodyData": false,
+					"inParameterData": false,
+					"parameterName": ""
+				}
+			},
+			"twitterData": {
+				"tweets": true,
+				"console": false,
+				"restAPI": false,
+				"contactCenter": false,
+				"token": "230218074-ly1sm8FRplb2vEO0nmSgRPh2EZxL7NVAJtEuwKGI",
+				"tokenSecret": "AV242MXEwaSJyDIrdIEmJsBkEPucCGgngcOwVd5oI3CVa",
+				"id": "230218074",
+				"userName": "IST Networks",
+				"profilePicUrl": "http://pbs.twimg.com/profile_images/829730461849157633/nQzcbn91_normal.jpg",
+				"keys": [
+					"Al Rajhi Bank",
+					"Rajhi Bank"
+				],
+				"contactCenterData": {
+					"genesysCPData": {
+						"queueName": "",
+						"endPoint": "",
+						"tenantId": "",
+						"mediaType": ""
+					},
+					"ciscoSMData": {
+						"host": "",
+						"port": ""
+					}
+				},
+				"restAPIData": {
+					"uri": "",
+					"methodGet": false,
+					"methodPost": false,
+					"inBodyData": false,
+					"inParameterData": false,
+					"parameterName": ""
+				}
+			},
+			"engineStatus": "Unknown",
+			"notificationList": null,
+			"removeTenant": false
+		},
+		{
+			"id": "10155922108332572",
+			"page": null,
+			"accesstoken": "EAACjfdf1m7cBADOZCE2ZBNo4OZAegLv8ZBcOZBPKQZAZBKdNHb3WfSOAF1ira9FzWBvnCul2FGmDXP7cjRHu4IOgpcZChxSAXFk9G1B3Of64qCYdBJCrDzt5B3STE7imFWJClvxF4pD6XuFZCX1ByXWZBZCM9qRZAuALapkZD",
+			"user": "Assma Salah El Din",
+			"startTime": "",
+			"endTime": "",
+			"queueName": null,
+			"endPoint": null,
+			"rate": "",
+			"tenantId": null,
+			"mediaType": null,
+			"startDate": "",
+			"facebookData": {
+				"posts": false,
+				"comments": false,
+				"replies": false,
+				"console": false,
+				"restAPI": false,
+				"contactCenter": false,
+				"pages": [],
+				"contactCenterData": {
+					"genesysCPData": {
+						"queueName": "",
+						"endPoint": "",
+						"tenantId": "",
+						"mediaType": ""
+					},
+					"ciscoSMData": {
+						"host": "",
+						"port": ""
+					}
+				},
+				"restAPIData": {
+					"uri": "",
+					"methodGet": false,
+					"methodPost": false,
+					"inBodyData": false,
+					"inParameterData": false,
+					"parameterName": ""
+				}
+			},
+			"instagramData": {
+				"posts": true,
+				"comments": true,
+				"replies": true,
+				"console": false,
+				"restAPI": false,
+				"contactCenter": true,
+				"pages": [
+					"246199665795861"
+				],
+				"contactCenterData": {
+					"genesysCPData": {
+						"queueName": "http://emp.istnetworks.com:8080/GCloud",
+						"endPoint": "Sample",
+						"tenantId": "Instagram",
+						"mediaType": "101"
+					},
+					"ciscoSMData": {
+						"host": "",
+						"port": ""
+					}
+				},
+				"restAPIData": {
+					"uri": "",
+					"methodGet": false,
+					"methodPost": false,
+					"inBodyData": false,
+					"inParameterData": false,
+					"parameterName": ""
+				}
+			},
+			"twitterData": {
+				"tweets": false,
+				"console": false,
+				"restAPI": false,
+				"contactCenter": false,
+				"token": null,
+				"tokenSecret": null,
+				"id": null,
+				"userName": null,
+				"profilePicUrl": null,
+				"keys": [],
+				"contactCenterData": {
+					"genesysCPData": {
+						"queueName": "",
+						"endPoint": "",
+						"tenantId": "",
+						"mediaType": ""
+					},
+					"ciscoSMData": {
+						"host": "",
+						"port": ""
+					}
+				},
+				"restAPIData": {
+					"uri": "",
+					"methodGet": false,
+					"methodPost": false,
+					"inBodyData": false,
+					"inParameterData": false,
+					"parameterName": ""
+				}
+			},
+			"engineStatus": "Unknown",
+			"notificationList": null,
+			"removeTenant": false
+		},
+		{
+			"id": "142434023282963",
+			"page": "batelco",
+			"accesstoken": "EAACjfdf1m7cBAPXoB0DnRrGlDDjQySDjPENn0TwonHCtzxPe9OfqGPMDZBaKtQLFZClcoWN3e9O4VPvekZCgsgX0SSrUijHD1YzX0tersdUiTPAfAgVT8rpBlu783AD27ssqfDtydQbbLJhQxnbx1gGjX3KihdH8CXFEtViLgZDZD",
+			"user": "Ahmed AlKooheji",
+			"startTime": "8:00 AM",
+			"endTime": "5:00 PM",
+			"queueName": "Instagram Inbound Queue",
+			"endPoint": "http://ec2-34-205-57-32.compute-1.amazonaws.com:7013/Genesys/Interaction/Batelco_INS_CP/WebServiceCapturePoint?wsdl",
+			"rate": "10",
+			"tenantId": "103",
+			"mediaType": "instagram",
+			"startDate": "",
+			"facebookData": null,
+			"instagramData": null,
+			"twitterData": null,
+			"engineStatus": "Unknown",
+			"notificationList": "maref@istnetworks.com",
+			"removeTenant": false
+		},
+		{
+			"id": "10156172768839618",
+			"page": "InsuranceCX",
+			"accesstoken": "EAACjfdf1m7cBAOZAEaOqElKym8l0IFaf7fkq1tEZAHRVPXdv4efZCZCHZCTxGP54ZBWyHj2eMq9YDBDMxravwzC8ZCRT2m6rO5ZAWnZAu0cKTNRaqqYHAuZBDsrgDDKZAuECXU3fmOmgVmlBa4WjLUlDozZAyRk2ZCpLZAJgoZD",
+			"user": "Mark Onsy Thomas",
+			"startTime": "00:00",
+			"endTime": "23:59",
+			"queueName": "Instagram Inbound Queue",
+			"endPoint": "http://ec2-34-205-57-32.compute-1.amazonaws.com:7008/Genesys/Interaction/INS_CP/WebServiceCapturePoint?wsdl",
+			"rate": "5",
+			"tenantId": "101",
+			"mediaType": "instagram",
+			"startDate": "2018-04-18",
+			"facebookData": null,
+			"instagramData": null,
+			"twitterData": null,
+			"engineStatus": "Unknown",
+			"notificationList": "maref@istnetworks.com,mostafa.rabie@istnetworks.com,rdegheidy@istnetworks.com,menna.maged@istnetworks.com",
+			"removeTenant": false
+		},
+		{
+			"id": "184630618970909",
+			"page": "TelTech1",
+			"accesstoken": "EAACjfdf1m7cBAMdDJNzD8zmpgRLCTFbwXhcw8gibBZCZA6FegihKjLBreUS8dFzmXt99TXfNvNdZB8VMmGnHEebCqAvme674Y9e1Arx8oryYF37hO0NNlbUZBlBTZCpC7LbuVFYZCZAMVNHpZCki5zZBNJ23TsqeROWCSMipukZBmtZAPXZCJMu2ZBYzJ",
+			"user": "Basma Mostafa",
+			"startTime": "00:08",
+			"endTime": "23:00",
+			"queueName": "Instagram Inbound Queue",
+			"endPoint": "http://ec2-34-205-57-32.compute-1.amazonaws.com:7013/Genesys/Interaction/Batelco_INS_CP/WebServiceCapturePoint?wsdl",
+			"rate": "5",
+			"tenantId": "103",
+			"mediaType": "instagram",
+			"startDate": "2018-07-02",
+			"facebookData": null,
+			"instagramData": null,
+			"twitterData": null,
+			"engineStatus": "Running",
+			"notificationList": null,
+			"removeTenant": false
+		},
+		{
+			"id": "10160629034030333",
+			"page": "maref2018",
+			"accesstoken": "EAAaDJIYtDN8BALApqXmrVMoARSlDtguPTOZASOmZANTDDcdZBKuUPx8BSm9E7ZBGjrB5KhLWcc2iWiZBE0q4hKL946KwjRZB3Hqha2CSJNOuytjbtVrEKqtp5dTGZBlEoPTU2LU0zp9hCIR8plbro4Y4dzokTkslCznqyP8okNchup4Nzp9qVTFZBxPjKd9XM1AZD",
+			"user": "Mamdouh Aref Mohamed",
+			"startTime": "08:00",
+			"endTime": "22:00",
+			"queueName": "Instagram Inbound Queue",
+			"endPoint": "http://ec2-34-205-57-32.compute-1.amazonaws.com:7013/Genesys/Interaction/Batelco_INS_CP/WebServiceCapturePoint?wsdl",
+			"rate": "5",
+			"tenantId": "103",
+			"mediaType": "instagram",
+			"startDate": "",
+			"facebookData": null,
+			"instagramData": null,
+			"twitterData": null,
+			"engineStatus": null,
+			"notificationList": null,
+			"removeTenant": false
+		}
+	]
+}
